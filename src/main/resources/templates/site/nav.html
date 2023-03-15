@@ -55,7 +55,7 @@
                         <img
                                 onclick="myFunction()"
                                 class="dropbtn"
-                                th:src="@{https://res.cloudinary.com/djfbh9dqg/image/upload/v1678355877/class_x8dvo1.jpg}" />
+                                    th:src="@{|${acc.tps_Photo}|}" />
                         <span class="name">[[${#request.remoteUser}]]</span>
                         <div id="myDropdown" class="dropdown-content">
                             <a  th:if="${#request.isUserInRole('Admin')}">ADMIN</a>
